@@ -1,0 +1,23 @@
+{
+  "name": "openticks",
+  "private": true,
+  "description": "Open-source read receipts for email. WhatsApp-style ticks, live, per recipient.",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:server": "bun run --filter @openticks/server dev",
+    "dev:extension": "bun run --filter @openticks/extension dev",
+    "build": "bun run --filter @openticks/extension build",
+    "zip": "bun run --filter @openticks/extension zip",
+    "test": "bun test",
+    "typecheck": "bun run --filter '*' typecheck"
+  },
+  "devDependencies": {
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "bun": ">=1.2"
+  }
+}

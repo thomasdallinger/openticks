@@ -1,0 +1,27 @@
+{
+  "name": "@openticks/extension",
+  "version": "0.1.0",
+  "private": true,
+  "description": "OpenTicks browser extension: WhatsApp-style read receipts inside your webmail.",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "postinstall": "wxt prepare",
+    "typecheck": "svelte-check --tsconfig ./tsconfig.json"
+  },
+  "dependencies": {
+    "@inboxsdk/core": "^2.2.31",
+    "@openticks/core": "workspace:*",
+    "kefir": "^3.8.8"
+  },
+  "devDependencies": {
+    "@types/kefir": "^3.8.11",
+    "@wxt-dev/module-svelte": "^2.0.5",
+    "svelte": "^5.57.2",
+    "svelte-check": "^4.7.7",
+    "wxt": "^0.21.4",
+    "@types/bun": "^1.4.3"
+  }
+}
